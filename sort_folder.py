@@ -65,7 +65,6 @@ def del_empty_dir(path): # удаляем пустые папки
 
 
 if __name__ == "__main__":
-    #path = r'C:\Users\aleksandr.mykhailov\OneDrive - PERNOD RICARD\Desktop\py\test_f' #папка где нужно навести порядок
     path = input ('Enter folder: ')
     create_new_folder(path)
     sort_files(path)
