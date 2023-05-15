@@ -1,8 +1,6 @@
 import os
 import shutil 
 
-
-
 extensions = {
     'video': ['mp4', 'mov', 'avi', 'mkv', 'wmv', '3gp', '3g2', 'mpg', 'mpeg', 'm4v', 'h264', 'flv','rm', 'swf', 'vob'],    
     'audio': ['mp3', 'wav', 'ogg', 'flac', 'aif', 'mid', 'midi', 'mpa', 'wma', 'wpl', 'cda'],
@@ -10,9 +8,6 @@ extensions = {
     'archives': ['zip', 'rar', '7z', 'z', 'gz', 'rpm', 'arj', 'pkg', 'deb'],
     'documents': ['pdf', 'txt', 'doc', 'docx', 'rtf', 'tex', 'wpd', 'odt'] ,
     'other':[]}
-
-
-
 
 def normalize(text):  #нормализайия имени файла 
     trans_map = {ord('а'):'a',ord('б'):'b',ord('в'):'v',ord('г'):'h',ord('д'):'d',ord('е'):'e',ord('є'):'ye',ord('ж'):'zh',ord('з'):'z',\
