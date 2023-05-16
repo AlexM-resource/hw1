@@ -27,6 +27,7 @@ def create_new_folder(path): #создание новых папок для со
             os.mkdir(os.path.join(path, ext))
 
 def sort_files(folder_path):
+    create_new_folder(folder_path)
     global path
     file_paths = list_of_file(folder_path)
     ext_list = list(extensions.items())
@@ -53,6 +54,9 @@ def sort_files(folder_path):
                     fr = f'{folder_path}\{file}'
                     shutil.move(fr, to)
                     break
+
+    del_empty_dir(folder_path)
+        
             
 def del_empty_dir(path): # удаляем пустые папки
     for d in os.listdir(path):
@@ -66,7 +70,6 @@ def del_empty_dir(path): # удаляем пустые папки
 
 if __name__ == "__main__":
     path = input ('Enter folder: ')
-    create_new_folder(path)
     sort_files(path)
-    del_empty_dir(path)
+    
 
