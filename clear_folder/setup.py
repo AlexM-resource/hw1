@@ -4,7 +4,7 @@ setup(
     name='clean',
     version='0.1',
     description='Sort file in folder',
-    url='http://github.com/dummy_user/useful',
+    url='https://github.com/AlexM-resource/hw1/tree/main/clear_folder',
     author='AlexM',
     author_email='flyingcircus@example.com',
     license='MIT',
